@@ -29,6 +29,5 @@ namespace Airline
         public virtual DbSet<CustomerDetail> CustomerDetails { get; set; }
         public virtual DbSet<FlightDetail> FlightDetails { get; set; }
         public virtual DbSet<Booking> Bookings { get; set; }
-        public virtual DbSet<Bought> Boughts { get; set; }
     }
 }

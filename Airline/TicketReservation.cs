@@ -116,7 +116,7 @@ namespace Airline
 
 
         // all code below created to make booking button disabled till all fields are done
-        private void updateButton()
+                private void updateButton()
                 {
                         button2.Enabled = customerIdText.Text != string.Empty && customerNameText.Text != string.Empty && fatherNameText.Text != string.Empty 
                                 && birthDateText.Text != string.Empty && emailText.Text != string.Empty && phoneText.Text != string.Empty
@@ -124,9 +124,15 @@ namespace Airline
                                 && seatText.Text != string.Empty;
                 }
 
+                private void UpdateSecondButton()
+                {
+                    button3.Enabled = customerIdText.Text != string.Empty;
+                }
+
                 private void customerIdText_TextChanged(object sender, EventArgs e)
                 {
                         updateButton();
+                        UpdateSecondButton();
                 }
 
                 private void customerNameText_TextChanged(object sender, EventArgs e)
